@@ -1,0 +1,370 @@
+{
+  "contractName": "CustomIERC721",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "name": "safeMint",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "currentTokenId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"currentTokenId\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"}],\"name\":\"safeMint\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/CustomIERC721.sol\":\"CustomIERC721\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/CustomIERC721.sol\":{\"keccak256\":\"0x1369782c03f8919c7241148c6d05de374edcbdcb53be75427094625b53c04131\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://58aae9f63b16d30bd58b2bef56308d4462717f78163c59188ca6dfa24b4acb96\",\"dweb:/ipfs/QmWWoXhkWnL8PcmTWNDxPaQkxm427n2GuAiameNnv6UBd6\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\n// OpenZeppelin Contracts (last updated v4.7.0) (token/ERC721/ERC721.sol)\n\npragma solidity ^0.8.0;\n\ninterface CustomIERC721 {\n        function safeMint(address to) external;\n\n        function currentTokenId() external view returns(uint256);\n}\n\n",
+  "sourcePath": "/home/bear/Desktop/staking-truffle/contracts/CustomIERC721.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/CustomIERC721.sol",
+    "exportedSymbols": {
+      "CustomIERC721": [
+        3232
+      ]
+    },
+    "id": 3233,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3221,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "107:23:19"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "CustomIERC721",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 3232,
+        "linearizedBaseContracts": [
+          3232
+        ],
+        "name": "CustomIERC721",
+        "nameLocation": "142:13:19",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "40d097c3",
+            "id": 3226,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "safeMint",
+            "nameLocation": "175:8:19",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3224,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3223,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nameLocation": "192:2:19",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3226,
+                  "src": "184:10:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3222,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "184:7:19",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "183:12:19"
+            },
+            "returnParameters": {
+              "id": 3225,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "204:0:19"
+            },
+            "scope": 3232,
+            "src": "166:39:19",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "009a9b7b",
+            "id": 3231,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "currentTokenId",
+            "nameLocation": "224:14:19",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3227,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "238:2:19"
+            },
+            "returnParameters": {
+              "id": 3230,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3229,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3231,
+                  "src": "263:7:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3228,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "263:7:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "262:9:19"
+            },
+            "scope": 3232,
+            "src": "215:57:19",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 3233,
+        "src": "132:142:19",
+        "usedErrors": []
+      }
+    ],
+    "src": "107:169:19"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/CustomIERC721.sol",
+    "exportedSymbols": {
+      "CustomIERC721": [
+        3232
+      ]
+    },
+    "id": 3233,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3221,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "107:23:19"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "CustomIERC721",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 3232,
+        "linearizedBaseContracts": [
+          3232
+        ],
+        "name": "CustomIERC721",
+        "nameLocation": "142:13:19",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "40d097c3",
+            "id": 3226,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "safeMint",
+            "nameLocation": "175:8:19",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3224,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3223,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nameLocation": "192:2:19",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3226,
+                  "src": "184:10:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3222,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "184:7:19",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "183:12:19"
+            },
+            "returnParameters": {
+              "id": 3225,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "204:0:19"
+            },
+            "scope": 3232,
+            "src": "166:39:19",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "009a9b7b",
+            "id": 3231,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "currentTokenId",
+            "nameLocation": "224:14:19",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3227,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "238:2:19"
+            },
+            "returnParameters": {
+              "id": 3230,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3229,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3231,
+                  "src": "263:7:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3228,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "263:7:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "262:9:19"
+            },
+            "scope": 3232,
+            "src": "215:57:19",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 3233,
+        "src": "132:142:19",
+        "usedErrors": []
+      }
+    ],
+    "src": "107:169:19"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.11+commit.d7f03943.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.4",
+  "updatedAt": "2022-08-01T06:31:22.946Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
